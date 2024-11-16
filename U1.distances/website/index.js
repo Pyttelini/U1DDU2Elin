@@ -4,3 +4,4 @@
 
 // Recommended: Ask for the city name and then the rest of the code
 
+console.log(cities[0].name);
