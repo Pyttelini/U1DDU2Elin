@@ -7,6 +7,8 @@ for (let city of cities) {
     if (cityPrompt === city.name) {
         document.querySelector("title").textContent = cityPrompt;
         document.querySelector("h2").textContent = cityPrompt+" (" + city.country + ")";
+
+
         found = true;
         break;
     }
@@ -29,6 +31,11 @@ for (let city of cities ){
     pcreate.textContent = city.name;
     CityDiv.appendChild(pcreate);
     pcreate.classList.add("cityBox");
+
+    if (cityPrompt === city.name) {
+        pcreate.classList.add("target");
+    }
+
 
 }
 let TableDiv = document.querySelector("#table");
