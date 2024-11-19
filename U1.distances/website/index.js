@@ -1,6 +1,24 @@
 let cityPrompt = prompt("Vilken Stad?");
 
 
+let found = false;
+
+for (let city of cities) {
+    if (cityPrompt === city.name) {
+        document.querySelector("title").textContent = cityPrompt;
+        found = true;
+        break;
+    }
+}
+if (!found) {
+    document.querySelector("title").textContent = "Not Found";
+}
+
+
+
+
+
+
 let CityDiv = document.querySelector("#cities");
 
 for (let city of cities ){
