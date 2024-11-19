@@ -8,8 +8,3 @@ for (let city of cities ){
 
 }
 
-let TableDiv = document.querySelector("#table");
-let image1 = document.createElement("img");
-
-TableDiv.append(image1);
-image1.setAttribute("src", "../Bilder och videos/avsta╠èndstabellen.png");
