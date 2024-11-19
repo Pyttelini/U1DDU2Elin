@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: skyblue;
+  background-color: #ab8ed7;
   margin: 20px;
 }
 
@@ -24,9 +24,9 @@ body {
 }
 
 #cities .target, #cities .closest, #cities .furthest { color: white }
-#cities .target { background-color: black; }
-#cities .closest { background-color: green;}
-#cities .furthest { background-color: blue; }
+#cities .target { background-color: #512f9f; }
+#cities .closest { background-color: #fefedf;}
+#cities .furthest { background-color: #d5cabd; }
 
 h1 {
   text-align: center;
@@ -58,7 +58,7 @@ main {
   min-width: 900px;
   max-width: 1300px;
   margin: auto;
-  background-color: aliceblue;
+  background-color: #fcf8ff;
   border-radius: 20px;
   padding: 20px;
 }

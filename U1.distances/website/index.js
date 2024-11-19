@@ -1,7 +1,15 @@
-// Recommended: All functions declared here
+let CityDiv = document.querySelector("#cities");
 
-// Recommended: constants with references to existing HTML-elements
+for (let city of cities ){
+    let pcreate = document.createElement("p");
+    pcreate.textContent = city.name;
+    CityDiv.appendChild(pcreate);
+    pcreate.classList.add("cityBox");
 
-// Recommended: Ask for the city name and then the rest of the code
+}
 
-console.log(cities[0].name);
+let TableDiv = document.querySelector("#table");
+let image1 = document.createElement("img");
+
+TableDiv.append(image1);
+image1.setAttribute("src", "../Bilder och videos/avsta╠èndstabellen.png");
