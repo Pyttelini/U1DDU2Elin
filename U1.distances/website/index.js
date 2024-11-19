@@ -1,3 +1,6 @@
+let cityPrompt = prompt("Vilken Stad?");
+
+
 let CityDiv = document.querySelector("#cities");
 
 for (let city of cities ){
