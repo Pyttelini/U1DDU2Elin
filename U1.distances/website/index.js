@@ -61,7 +61,7 @@ for (let city of cities ){
     }
     else if( nearestName == city.name){
         let pcreate = document.createElement("p");
-        pcreate.textContent = city.name + " ligger " + nearestCity/10 + "mil bort";
+        pcreate.textContent = city.name + " ligger " + nearestCity/10 + " mil bort";
         CityDiv.appendChild(pcreate);
         pcreate.classList.add("cityBox");
         pcreate.classList.add("closest")
