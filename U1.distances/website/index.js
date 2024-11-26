@@ -52,32 +52,37 @@ else {
     }
 }
 
-
-
 for (let city of cities ){
-    let pcreate = document.createElement("p");
-    pcreate.textContent = city.name;
-    CityDiv.appendChild(pcreate);
-    pcreate.classList.add("cityBox");
-
     if (cityPrompt === city.name) {
+        let pcreate = document.createElement("p");
+        pcreate.textContent = city.name;
+        CityDiv.appendChild(pcreate);
+        pcreate.classList.add("cityBox");
         pcreate.classList.add("target");
     }
     else if( nearestName == city.name){
+        let pcreate = document.createElement("p");
+        pcreate.textContent = city.name + " ligger " + nearestCity/10 + "mil bort";
+        CityDiv.appendChild(pcreate);
+        pcreate.classList.add("cityBox");
         pcreate.classList.add("closest")
-        pcreate.textContent = city.name;
+        
     }
     else if( furtherstName == city.name){
+        let pcreate = document.createElement("p");
+        CityDiv.appendChild(pcreate);
+        pcreate.classList.add("cityBox");
         pcreate.classList.add("furthest")
+        pcreate.textContent = city.name + " ligger " + furtherstCity/10 + " mil bort";
+    }
+    else{
+        let pcreate = document.createElement("p");
         pcreate.textContent = city.name;
+        CityDiv.appendChild(pcreate);
+        pcreate.classList.add("cityBox");
+    
     }
 }
-
-
-
-
-
-
 
 let TableDiv = document.querySelector("#table");
 let pcreateFirstGrid = document.createElement("p");
