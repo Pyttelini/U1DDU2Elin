@@ -18,16 +18,6 @@ for (let city of cities) {
         break;
     }
 }
-const linksId = document.querySelectorAll('#links a');
-
-const newLinks = [
-    'https://webshare.mah.se/aq3246/U1.distances/website/index.html',
-    'https://github.com/Pyttelini/U1DDU2Elin.git'];
-
-        linksId.forEach((link, index) => {
-            link.href = newLinks[index];
-        });
-
 if (!found) {
     document.querySelector("title").textContent = "Not Found";
     document.querySelector("h2").textContent = cityPrompt + " finns inte i databasen";
