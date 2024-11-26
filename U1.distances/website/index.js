@@ -39,21 +39,17 @@ else {
         }
     }
 
-
-    console.log("Nearest City ID: " + nearestName);
-    console.log("Furthest City ID: " + furtherstName);
-
     for (const findName of cities) {
         if (nearestName == findName.id) {
             nearestName = findName.name;
+            document.getElementById("closest").textContent= nearestName;
+
         }
         if (furtherstName == findName.id) {
             furtherstName = findName.name;
+            document.getElementById("furthest").textContent= furtherstName;
         }
     }
-
-    console.log("Nearest City: " + nearestName);
-    console.log("Furthest City: " + furtherstName);
 }
 
 

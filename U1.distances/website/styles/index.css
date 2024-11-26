@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ab8ed7;
+  background-color: #F2BAC9;
   margin: 20px;
 }
 
@@ -24,9 +24,9 @@ body {
 }
 
 #cities .target, #cities .closest, #cities .furthest { color: white }
-#cities .target { background-color: #512f9f; }
-#cities .closest { background-color: #fefedf;}
-#cities .furthest { background-color: #d5cabd; }
+#cities .target { background-color: #995FA3; }
+#cities .closest { background-color: #B8C490;}
+#cities .furthest { background-color: #4F0734; }
 
 h1 {
   text-align: center;
